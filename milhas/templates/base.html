@@ -1,0 +1,261 @@
+
+<!doctype html>
+<html lang="pt-br">
+    <head>
+      <title>MaxFriday, a Black Friday das passagens aéreas</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="description" content="Aproveite descontos imperdíveis ao longo do dia para economizar. OFERTAS LIMITADAS!">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta property="og:title" content="MaxFriday, a Black Friday das passagens aéreas">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://www.maxmilhas.com.br/blackfriday">
+      <meta property="og:site_name" content="MaxMilhas">
+      <meta property="og:image" content="https://s3.amazonaws.com/maxmilhas/etc/maxfriday_sharer_fb.jpg">
+      <meta property="og:description" content="Aproveitei a máxima da máxima economia e vou viajar com um super desconto. Vem, gente! \o/">
+
+      <link rel="icon" href="https://assets.maxmilhas.com.br/806fea88e4bc/default/img/favicon.ico" type="image/x-icon" />
+        {% load static %}
+
+       <link rel="stylesheet" type="text/css" href="https://assets-bf.maxmilhas.com.br/assets/styles/vendors.min.css" />
+       <link rel="stylesheet" href="https://assets-bf.maxmilhas.com.br/assets/styles/main.css">
+       <!-- <link rel="stylesheet" href="{% static 'assets/styles/main.css' %}"> -->
+       <script type="text/javascript">
+            maxdate = '{{ countdown.cupom_end_date.isoformat }}';
+            mindate = '{{ countdown.cupom_start_date.isoformat }}';
+        </script>
+    {% block css %}{% endblock %}
+    <!-- Custom styles for this template -->
+
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KXCH4F');
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+      ga('create', 'UA-35328990-1', 'auto');
+      ga('set', 'dimension1', 'No');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      dataLayer.push({
+          event: 'dito.init',
+          ditoInit: {event: 'MjAxNS0wMy0xMiAwOTozNToxMiAtMDMwME1heCBNaWxoYXMxMTk' }
+      });
+    </script>
+  </head>
+
+
+    <body>
+       <div class="wrapper" >
+            <!-- Sidebar Holder  -->
+
+
+            <nav id="sidebar">
+                 <nav id="navbar" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button"  class="sidebarCollapse btn btn-info navbar-btn">
+                                <i class="fa fa-3x fa-bars"></i>
+                            </button>
+                            <div id="logo-mobile"><img class="img-responsive" src="https://assets-bf.maxmilhas.com.br/assets/img/logo-mobile.svg" /></div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="btn-arrow" class="sidebarCollapse  navbar-btn">
+                                 <img id="arrow" src="https://assets-bf.maxmilhas.com.br/assets/img/arrow.png"  class="rotate">
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+
+               <div class="row hidden-xs hodden-sm">
+                    <div id="logo-black-friday" class="col-md-2 col-md-offset-1 "></div>
+                </div>
+                <div class="row">
+
+                    <div class="sidebar-header col-md-8 col-xs-12 col-sm-12 pull-right col-md-pull-1">
+                        <h1>DESCONTOS IMPERDÍVEIS</h1>
+                        <div class="col-md-offset-3 col-md-9 col-xs-12 ">
+                            <p> A MaxFriday é a Black Friday das passagens aéreas. <b>A cada intervalo de tempo, você tem novos cupons de desconto</b> para viajar. Corra! Além do tempo, <b>os cupons são limitados. </b> </p>
+                            <br> <br class="hidden-xs hidden-sm">
+                            <p><b>É só hoje! Copiou, usou, economizou!</b></p>
+                            <button id="view-offer" class="btn-link sidebarCollapse" onclick="ga('send', 'event', 'Black Friday', 'Botao', 'Ver Descontos')">
+                              VER DESCONTOS <img src= "https://assets-bf.maxmilhas.com.br/assets/img/arrow_white.png" >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-xs-12 pull-left" >
+                        <div id="menuBackground" class="components">
+                        <div id="menu" class="menuBlack">
+                                <span class="margin-left">MENU</span><br>
+                                <a href="https://blackfriday.maxmilhas.com.br/como-funciona"><b>+COMO FUNCIONA</b></a><br>
+                                <a href="https://s3.amazonaws.com/maxmilhas/newsletter/2017/max-friday/Regulamento-MaxFriday2017.pdf" target="_blank"><b>+REGULAMENTO</b></a><br>
+                                <a href="https://www.maxmilhas.com.br/quemsomos" target="_blank"><b>+QUEM SOMOS?</b></a><br>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" >
+                        <div id="menuShare" class="menuShare">
+                            <span class="margin-left">COMPARTILHE</span>
+                            <div class="addthis_inline_share_toolbox_bppn hidden-xs"></div>
+                            <div class="addthis_inline_share_toolbox_e9pe hidden-lg"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12 customer">
+                            <p>ATENDIMENTO <b>24HORAS</b> | SELO <b>RA1000</b></p>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+
+
+
+            <!-- Page Content Holder -->
+                <div class="stars"></div>
+                <div class="twinkling"></div>
+
+                <div id="container" class="content container">
+
+
+
+                      {% block conteudo %}{% endblock %}
+
+                    {% if message %}
+                    <div class="row">
+                        <div class="message hidden-xs hidden-sm">
+                            <div class="col-xs-2 col-md-1 exclamation">
+                                <img src= "https://assets-bf.maxmilhas.com.br/assets/img/exclamation.png">
+                            </div>
+                            <div class="col-md-10 col-md-11">
+                                {{ message }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="row">
+                        <div class=" col-xs-12 col-md-12">
+                            <div class="background">
+                                <h3>Como usar:</h3>
+                                <ol>
+                                    <li><p><b>Copie</b> seu cupom e acelere.</p></li>
+                                    <li><p>Busque e selecione seu voo no site da <a href="http://www.maxmilhas.com.br" target="_blank">MaxMilhas</a>.</p></li>
+                                    <li><p><b>Aplique o cupom na tela de pagamento</b>, finalize a compra e garanta o desconto.</p></li>
+                                </ol>
+
+                                Copiou seu desconto?<br>
+                                <a href="javascript:void();" target="_blank" class="btn btn-link btn-search affiliates" onclick="ga('send', 'event', 'Black Friday', 'Botao', 'Pesquisar Passagem')">
+                                  Pesquise sua passagem agora <img src= "https://assets-bf.maxmilhas.com.br/assets/img/arrow_white.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if sold_out or max_oferta_sold_out  %}
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-5">
+                            <div class="bar-gray"></div>
+                        </div>
+                        <div class="col-xs-12 col-md-12 text-center pagination-centered center-block">
+                            <h2 class="title-offer-out">ofertas esgotadas</h2>
+                            <h4>se você não aproveitou, perdeu!</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="row">
+                      {% for s in sold_out.all %}
+                        {% if s.max_oferta == 0 %}
+                        <div class="col-xs-12 col-md-4">
+                            <div class="offer-out" id="cupom-out-{{ s.id }}">
+                                <div>
+                                    <span class="flag">{{ s.status }}</span>
+                                </div>
+                                <div class="offer-title out">
+                                    {{ s.title }}
+                                </div>
+                                <div class="offer-subtitle out">
+                                    PARA {{ s.subtitle }}
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out"><b>esgotado</b></div>
+                            </div>
+                        </div>
+                        {% else %}
+                          <div class="col-xs-12 col-md-12">
+                            <div class="offer-out max-offer">
+                                <span class="flag">{{ s.status }}</span>
+                                <div class="offer-title out">
+                                    {{ s.title }}
+                                </div>
+                                <div class="offer-subtitle out">
+                                    PARA <b>{{ b.subtitle }}</b>
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">
+                                    <b>ESGOTADO</b>
+                                </div>
+                                <div class="max-title out">max<br>oferta</div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                      {% endfor %}
+
+                      </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="footer">
+                            <a href="https://www.facebook.com/MaxMilhas" target="_blank"><img  src="https://assets-bf.maxmilhas.com.br/assets/img/facebook.png" alt=""></a>
+                            <a href="https://www.linkedin.com/company-beta/3478625/" target="_blank"><img src="https://assets-bf.maxmilhas.com.br/assets/img/linkedin.png" alt=""></a>
+                            <a href="https://twitter.com/maxmilhas" target="_blank"><img src="https://assets-bf.maxmilhas.com.br/assets/img/twitter.png " alt=""></a>
+                            <a href="https://www.youtube.com/user/canalmaxmilhas" target="_blank"><img src="https://assets-bf.maxmilhas.com.br/assets/img/youtube.jpg" alt=""></a>
+                            <a href="https://www.instagram.com/maxmilhas" target="_blank"><img src="https://assets-bf.maxmilhas.com.br/assets/img/instagram.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Scripts de vendors, wow.js separado para evitar conflitos yep e MAIN JS -->
+        <script src="https://assets-bf.maxmilhas.com.br/assets/scripts/vendors.min.js"></script>
+        <script src="https://assets-bf.maxmilhas.com.br/assets/scripts/vendors/wow/wow.min.js"></script>
+        <script src="https://assets-bf.maxmilhas.com.br/assets/scripts/main.js"></script>
+        <!-- <script src="{% static 'assets/scripts/main.js' %}"></script> -->
+
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590cf6e28de4afd5"></script>
+    </body>
+</html>

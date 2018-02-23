@@ -1,0 +1,227 @@
+
+<!doctype html>
+<html lang="pt-br">
+    <head>
+      <title>MaxFriday, a Black Friday das passagens aéreas</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="description" content="Aproveite descontos imperdíveis ao longo do dia para economizar. OFERTAS LIMITADAS!">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta property="og:title" content="MaxFriday, a Black Friday das passagens aéreas">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://www.maxmilhas.com.br/blackfriday">
+      <meta property="og:site_name" content="MaxMilhas">
+      <meta property="og:image" content="https://s3.amazonaws.com/maxmilhas/etc/maxfriday_sharer_fb.jpg">
+      <meta property="og:description" content="Aproveitei a máxima da máxima economia e vou viajar com um super desconto. Vem, gente! \o/">
+
+      <link rel="icon" href="https://assets.maxmilhas.com.br/806fea88e4bc/default/img/favicon.ico" type="image/x-icon" />
+        {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="https://assets-bf.maxmilhas.com.br/assets/styles/vendors.min.css" />
+        <link rel="stylesheet" href="https://assets-bf.maxmilhas.com.br/assets/styles/main.css">
+        <link rel="stylesheet" href="https://assets-bf.maxmilhas.com.br/assets/styles/como-funciona.css">
+        <!-- <link rel="stylesheet" href="{% static 'assets/styles/main.css' %}">
+       <link rel="stylesheet" href="{% static 'assets/styles/como-funciona.css' %}"> -->
+       <script type="text/javascript">
+            maxdate = '{{ countdown.cupom_end_date.isoformat }}';
+        </script>
+    {% block css %}{% endblock %}
+    <!-- Custom styles for this template -->
+  </head>
+
+
+    <body>
+       <div class="wrapper" >
+            <!-- Sidebar Holder  -->
+
+
+            <nav id="sidebar">
+                 <nav id="navbar" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button"  class="sidebarCollapse btn btn-info navbar-btn">
+                                <i class="fa fa-3x fa-bars"></i>
+                            </button>
+                            <div id="logo-mobile"><img class="img-responsive" src="https://assets-bf.maxmilhas.com.br/assets/img/logo-mobile.svg" /></div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="btn-arrow" class="sidebarCollapse  navbar-btn">
+                                 <img id="arrow" src="https://assets-bf.maxmilhas.com.br/assets/img/arrow.png"  class="rotate">
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+
+               <div class="row hidden-xs hodden-sm">
+                    <div id="logo-black-friday" class="col-md-2 col-md-offset-1 "></div>
+                </div>
+                <div class="row">
+
+                    <div class="sidebar-header col-md-8 col-xs-12 col-sm-12 pull-right col-md-pull-1">
+                        <h1>DESCONTOS IMPERDÍVEIS</h1>
+                        <div class="col-md-offset-3 col-md-9 col-xs-12 ">
+                            <p> A MaxFriday é a Black Friday das passagens aéreas. <b>A cada intervalo de tempo, você tem novos cupons de desconto</b> para viajar. Corra! Além do tempo, <b>os cupons são limitados. </b> </p>
+                            <br> <br class="hidden-xs hidden-sm">
+                            <p><b>É só hoje! Copiou, usou, economizou!</b></p>
+                            <button id="view-offer" class="btn-link sidebarCollapse" onclick="ga('send', 'event', 'Black Friday', 'Botao', 'Ver Descontos')">
+                              VER DESCONTOS <img src= "https://assets-bf.maxmilhas.com.br/assets/img/arrow_white.png" >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-xs-12 pull-left" >
+                        <div id="menuBackground" class="components">
+                        <div id="menu" class="menuBlack">
+                                <span class="margin-left">MENU</span><br>
+                                <a href="https://blackfriday.maxmilhas.com.br/como-funciona"><b>+COMO FUNCIONA</b></a><br>
+                                <a href="https://s3.amazonaws.com/maxmilhas/newsletter/2017/max-friday/Regulamento-MaxFriday2017.pdf" target="_blank"><b>+REGULAMENTO</b></a><br>
+                                <a href="https://www.maxmilhas.com.br/quemsomos" target="_blank"><b>+QUEM SOMOS?</b></a><br>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" >
+                        <div id="menuShare" class="menuShare">
+                            <span class="margin-left">COMPARTILHE</span>
+                            <div class="addthis_inline_share_toolbox_bppn hidden-xs"></div>
+                            <div class="addthis_inline_share_toolbox_e9pe hidden-lg"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12 customer">
+                            <p>ATENDIMENTO <b>24HORAS</b> | SELO <b>RA1000</b></p>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+
+            <div class="content container content-faq">
+              <div class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-7">
+                  <div class="back">
+                      <a href="https://www.maxmilhas.com.br/blackfriday">< TELA INICIAL </a>
+                  </div>
+                  <div class="heading">
+                      <h1>Como funciona <span>a maxfriday?</span></h1>
+                  </div>
+                  <div class="text">
+                    Na MaxFriday todo mundo encontra o cupom ideal para voar com um descontão,
+                    mas esse benefício pode esgotar a qualquer momento. Então, não dá pra vacilar,
+                    né? É pá-pum! <b>Você precisa encontrar a melhor opção, aplicar e ganhar!</b>
+                  </div>
+                  <div class="rectangle"></div>
+                  <div class="title">
+                      01.<h3> Não dá pra perder tempo! </h3>
+                  </div>
+                  <div class="text">
+                      Todas as ofertas tem um descontão para você sair sempre ganhando. Escolha a opção que mais combina com a sua viagem e não perca tempo!
+                  </div>
+                  <div class="title">
+                      02.<h3> COPIE PARA USAR E GANHAR! </h3>
+                  </div>
+                  <div class="text">
+                      Quando encontrar o cupom ideal, copie e voe para o próximo passo. Você está perto de garantir sua passagem com a máxima da máxima economia.
+                  </div>
+                  <div class="title">
+                      03.<h3> Compre com a máxima da máxima economia  </h3>
+                  </div>
+                  <div class="text">
+                      O site da MaxMilhas já oferece descontos incríveis para que você voe cada vez mais. Afinal, você merece viajar, né? Após copiar seu cupom, acesse o site da MaxMilhas para fazer sua compra, usar o benefício e economizar! É SÓ HOJE, hein? Você não pode perder!
+                  </div>
+                  <a href="https://www.maxmilhas.com.br/blackfriday" target="_blank" class="btn btn-link btn-block btn-desc">VER DESCONTOS <img src="../static/assets/img/arrow_white.png"></a>
+                  <div class="heading">
+                    <h2>FAQ <span>MAXMILHAS</span></h2>
+                  </div>
+                  <div class="rectangle"></div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> A MaxFriday dura até quando?</h4>
+                      <div class="text">
+                          Como tudo que é bom dura pouco, a MaxFriday termina no dia 24/11/2017, às 23:59. Então, aproveite! As compras com utilização de cupons só serão aceitas dentro desse prazo ou antes que o benefício esgote.
+                      </div>
+                  </div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> Os cupons podem ser utilizados quantas vezes por usuário?</h4>
+                      <div class="text">
+                          Cada cupom possui uma utilização única por CPF, mas você pode utilizar quantos cupons quiser. Dá pra garantir passagens com a máxima da máxima economia para as férias, reveillon e até carnaval. Se joga!
+                          <b>Ah, os cupons não são acumulativos, ou seja, para cada compra poderá ser aplicado apenas UM cupom de desconto. </b>
+                      </div>
+                  </div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> Consigo utilizar um cupom esgotado?</h4>
+                      <div class="text">
+                          Não. Mesmo com o código já copiado, é preciso finalizar sua compra para garantir o desconto. Os cupons que estiverem esgotados não poderão ser mais utilizados.
+                      </div>
+                  </div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> Consigo utilizar um cupom com tempo expirado?</h4>
+                      <div class="text">
+                          Não. O tempo de vigência determina a validade do cupom, após expirado, o benefício não será mais aplicado.
+                      </div>
+                  </div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4>Posso utilizar os cupons para qualquer destino? </h4>
+                      <div class="text">
+                          Cada cupom possui restrições específicas. Por isso, é importante entender o benefício de cada um deles para fazer sua escolha.
+                      </div>
+                  </div>
+
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> Preciso de milhas para participar da MaxFriday?</h4>
+                      <div class="text">
+                          Ninguém precisa ter milhas para participar da MaxFriday e comprar com a gente! Sua passagem será emitida pela MaxMilhas com as milhas de vendedores cadastrados no site. O pagamento é feito por cartão de crédito ou transferência bancária.
+                      </div>
+                  </div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> Corro o risco de ter minha passagem cancelada? </h4>
+                      <div class="text">
+                          Após a emissão da passagem, seu desconto e embarque estão garantidos pela MaxMilhas. Você só terá a preocupação de arrumar as malas e se jogar na viagem. O resto, deixa com a gente!
+                      </div>
+                  </div>
+                  <div id="square">
+                      <div id="diamond"></div>
+                      <h4> Como funcionam os cupons de desconto? </h4>
+                      <div class="text">
+                          Todos os cupons de desconto são limitados. Eles podem esgotar antes mesmo que o cronômetro zere, pois todos eles possuem um limite de utilização. Ao decorrer do dia, os benefícios serão atualizados dentro de um espaço de tempo. A MaxFriday terá cupons de descontos ativos ao decorrer de todo o dia.
+                      </div>
+                  </div>
+
+                  <a href="https://s3.amazonaws.com/maxmilhas/newsletter/2017/max-friday/Regulamento-MaxFriday2017.pdf" target="_blank" class="btn btn-link btn-block btn-faq">ACESSE O REGULAMENTO AGORA <img src="../static/assets/img/arrow_white.png"></a>
+                  <div class="goback">
+                      <a href="https://www.maxmilhas.com.br/blackfriday" target="_blank">VOLTAR PARA TELA INICIAL</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Scripts de vendors, wow.js separado para evitar conflitos e MAIN JS -->
+        <script src="https://assets-bf.maxmilhas.com.br/assets/scripts/vendors.min.js"></script>
+        <script src="https://assets-bf.maxmilhas.com.br/assets/scripts/vendors/wow/wow.min.js"></script>
+        <script src="https://assets-bf.maxmilhas.com.br/assets/scripts/main.js"></script>
+
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-590cf6e28de4afd5"></script>
+    </body>
+</html>

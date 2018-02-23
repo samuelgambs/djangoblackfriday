@@ -1,0 +1,195 @@
+@import "fa.css";
+
+.back a{
+  font-size: 16px;
+  font-family: "Gotham Black" ;
+  color: rgb(234, 22, 22);
+  text-decoration: underline;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.back a:hover{
+  text-decoration: none;
+}
+.content-faq{
+  margin-top: 50px;
+}
+.heading h1, .heading h2{
+  font-size: 46px;
+  font-family: "Gotham Book" ;
+  color: rgb(184, 184, 184);
+  line-height: 1.06;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.heading h1 span, .heading h2 span{
+  font-family: "Gravitas One" ;
+}
+.heading h2 span{
+  display: initial;
+}
+
+.text{
+    font-size: 16px;
+    font-family: "Gotham Book";
+    color: #f1f1f1;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 1.3px;
+}
+.text b{
+  font-family: 'Gotham Black'
+}
+
+.rectangle {
+    background-color: rgb(242, 242, 242);
+    width: 95px;
+    height: 8px;
+    margin: 30px 0 46px -39px;
+}
+
+.title{
+  font-size: 25px;
+  font-family: "Gravitas One";
+  color: rgb(184, 184, 184);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.title h3 {
+    font-size: 20px;
+    font-family: "Gotham HTF";
+    color: rgb(184, 184, 184);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    display: inline;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.btn-view{
+    width: 383px;
+    height: 42px;
+    background-color: #f21414;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    margin: 21px 0 53px;
+}
+.btn-pdf {
+    width: 96%;
+    margin-left: 14px;
+    height: 42px;
+    background-color: #f21414;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: "Gravitas One";
+  color: white;
+}
+
+#square {
+  margin: 1em;
+  border: 2px solid white;
+  width: 100%;
+  padding-left: 56px;
+  padding-right: 50px;
+  padding-top: 19px;
+}
+#square h4{
+  text-indent: initial;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.lg{
+  height: 200px
+}
+#diamond {
+    width: 23px;
+    height: 23px;
+/* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+/* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+
+  border: 2px solid white;
+  background-color: black;
+  float: left;
+  margin: 61px 0 0 -56px;
+  position: absolute;
+}
+.goback{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+.goback a{
+  font-size: 16px;
+  color: white;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 40px;
+  font-family: 'Gotham Black'
+}
+.goback a:hover{
+  text-decoration: underline;
+}
+.btn-faq, .btn-faq:active, .btn-faq:focus, .btn-faq:hover{
+  width: 100%;
+  margin: 1em;
+}
+.btn-desc, .btn-desc:active, .btn-desc:focus, .btn-desc:hover{
+  width: 60%;
+  margin: 50px 0;
+}
+@media (max-width: 992px)  {
+  .title{
+    white-space: initial;
+  }
+  .heading h1, .heading h2{
+    font-size: 26px;
+  }
+  .heading h1{
+    margin-top: 20px;
+  }
+  .heading h1 span{
+    display: inline;
+  }
+  .content-faq{
+        margin: 45% 0 0;
+  }
+  #square {
+    margin-left: 0;
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  #diamond{
+    margin: 61px 0 0 -26px;
+  }
+  .btn-faq, .btn-faq:active, .btn-faq:focus, .btn-faq:hover{
+    margin-left: 0;
+    font-size: 15px;
+  }
+  .btn-desc, .btn-desc:active, .btn-desc:focus, .btn-desc:hover{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .text{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,824 @@
+//@import "fonts";
+
+//#@import "modules/how_works";
+
+@import "fa.css";
+
+
+@import "https://fonts.googleapis.com/css?family=Gravitas+One";
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('../fonts/Gotham-Black.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Gotham-Black.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Gotham-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gotham-Black.svg#0b358a21b3e426ee0635cfc34eab6e7e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/otham-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Gotham-Book.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Gotham-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gotham-Book.svg#7510147900d23fa3ad697e74bf146ea2') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra';
+  src: url('../fonts/Gotham-Ultra.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Gotham-Ultra.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Gotham-Ultra.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Gotham-Ultra.svg#68cdd64c623d5cd24b716ed9d9ff0958') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.btn-info {
+    color: black;
+    background-color: transparent;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('assets/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    font-family: 'Gotham HTF', sans-serif;
+    background: black;
+}
+
+
+p {
+  font-size: 18px;
+  font-family: "Gotham HTF";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  
+}
+
+
+h1 {
+  font-size: 57.683px;
+  font-family: "Gravitas One";
+  color: rgb(0, 0, 0);
+  line-height: 1.091;
+  -moz-transform: matrix( 0.95349005726368,0,0,0.95349005726368,0,0);
+  -webkit-transform: matrix( 0.95349005726368,0,0,0.95349005726368,0,0);
+  -ms-transform: matrix( 0.95349005726368,0,0,0.95349005726368,0,0);
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 14px;
+    font-family: "Gotham HTF";
+    color: black;
+    line-height: 1.2;
+}
+
+
+b, strong {
+    font-weight: 600 !important;
+}
+
+.customer {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.customer a {
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+}
+
+.footer {
+    text-align: center;
+    margin: 21px 0 55px;
+    border-top: 3px solid #535353;
+    padding-top: 47px;
+    width: 90.5%;
+}
+.footer a {
+  margin-left: 5px;
+}
+
+.navbar {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 70px;
+    top: 156px;
+    z-index: 3;
+    /*position: absolute;
+    margin-left: 67.5%;*/
+   /* transition: all 0.3s;*/
+    float: right;
+    right: -35px;
+}
+#navbar.active{
+    /*margin-left: 24.5%*/
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    padding: 3px 4px;
+}
+
+btn-info.active, .btn-info:active, .btn-info:hover, .open>.btn-info.dropdown-toggle {
+    color: black;
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.btn-info.focus, .btn-info:focus {
+    color: black;
+    background-color: white !important;
+    border-color: white !important;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i, span {
+    display: inline-block;
+}
+span {
+    margin-bottom: 20px;
+    font-family: "Gotham HTF";
+}
+span.active {
+  color: black;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+
+}
+
+#sidebar {
+    min-width: 70%;
+    max-width: 70%;
+    background: #f2f2f2 url("../img/background.jpg") no-repeat ; 
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 5;
+    height: 100%;
+    padding-top: 26px;
+    position: fixed;
+
+}
+
+#sidebar.active {
+    min-width: 20%;
+    max-width: 20%;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header h1, #sidebar.active .sidebar-header p, #sidebar.active .logo a, #sidebar.active .customer p, #sidebar.active .CTAs {
+    display: none;
+}
+
+
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: left;
+    font-size: 0.85em;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
+    top: auto;
+    bottom: 5px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+.tweaked-margin {
+    margin-left: 20px; 
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    text-align: right;
+    top: -230px;
+    margin-bottom: -120px
+   
+}
+.img-responsive{
+  margin-left: 20%
+}
+.top {
+    font-size: 18px;
+    font-family: Gotham HTF;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    margin: 0 0 25px;
+    width: 612px;
+    height: 32px;
+    letter-spacing: 1.5px;
+}
+.top span {
+  color: #ffc000;
+}
+.top2 {
+  font-size: 22px;
+  font-family: "Gotham HTF";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 1.5px;
+}
+.count {
+  font-size: 56px;
+  font-family: "Gravitas One";
+  color: rgb(255, 192, 0);
+  line-height: 1.2;
+  text-align: left;
+
+}
+.progress-bar-container {
+    width: 369px;
+}
+.progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 0px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    border: 2px solid #e5e5e3;
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    background-color: #ffc000;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    transition: width .6s ease;
+}
+.flag {
+    display: inline-block;
+    padding: 8px 4px 5px 22px;
+    font-family: Gotham-Black;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    color: #000;
+    background: #c8c8c8;
+    text-transform: uppercase;
+    box-shadow: 9px 0 39px 1px #000;
+    font-size: 16px;
+    left: -69px;
+    top: -16px;
+    width: 247px;
+    margin-bottom: 11px;
+}
+.flag span {
+  font-family: "Gotham HTF";
+}
+.flag:after, .flag:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 0.9em solid transparent;
+    right: -0.9em;
+    position: absolute;
+    top: 0;
+    border-top: 1em solid #c8c8c8;
+   
+}
+.flag:after {
+    top: auto;
+    bottom: 0;
+    border-top: none;
+    border-bottom: 1em solid #c8c8c8;
+  
+}
+.bar-gray{
+  background-color: #b5b5b5;
+  height: 10px;
+  width: 83px;
+  margin: 6px 0 21px 1px;
+}
+
+.bar-silver, .bar-black {
+    height: 6px;
+    width: 66px;
+    margin: 6px 0 21px 1px;
+}
+.bar-silver {
+      background-color: #e5e5e5;
+}
+.bar-black {
+  background-color: black;
+}
+
+.offer, .offer-out {
+    border: 2px solid #fff;
+    width: 300px;
+    margin-top: 20px;
+    padding: 0px 42px 31px 42px;
+}
+.offer-out {
+  border: 2px solid #b8b8b8;
+}
+.offer-title, .offer-title-white {
+  font-size: 22px;
+  font-family: "Gravitas One";
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.offer-subtitle, .offer-subtitle-white {
+  font-size: 14px;
+  font-family: "Gotham HTF";
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.offer-cupom {
+  font-size: 16px;
+  font-family: "Gotham HTF";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.offer-code, .offer-code-white{
+  font-size: 20px;
+  font-family: "Gotham HTF";
+  color: rgb(255, 192, 0);
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+.btn-offer {
+    border-radius: 19px;
+    width: 169px;
+    text-transform: uppercase;
+    background-color: #e1e1df;
+    border: 0;
+    height: 30px;
+    margin-top: 11px;
+    padding-top: 6px;
+    font-size: 16px;
+}
+.offer-white{
+  background: white;
+
+}
+.offer-title, .offer-subtitle{
+  color: white;
+}
+.offer-title-white, .offer-subtitle-white{
+  color: black;
+}
+.offer-code-white {
+    color: #1abc9c;
+    width: 225px;
+    margin-bottom: 9px;
+    margin-top: -7px;
+}
+.btn-white{
+    background-color: #ff0000;
+    width: 100%;
+    height: 39px;
+    border: 0;
+    color: white;
+    font-family: "Gotham HTF";
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 16px;
+}
+.js-copytextarea {
+  background:none;
+  border: 0; 
+}
+.close {
+  font-size: 18px;
+  font-family: "Gotham HTF";
+  color: black !important;
+  line-height: 1.2;
+  text-align: left;
+  margin: -27px -33px;
+}
+.btn-link{
+    background-color: red;
+    border: 0;
+    width: 410px;
+    height: 37px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+
+}
+.logo{
+      position: relative;
+    left: 156px;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: Gotham HTF;
+    color: #b5b5b5;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 600;
+    text-indent: -85.5px;
+    letter-spacing: 2.5px;
+    margin-top: -7px;
+    text-transform: uppercase;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Gravitas One";
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 19px;
+
+}
+
+h4 {
+    font-family: "Gotham HTF";
+    color: #b5b5b5;
+    line-height: 1.25;
+    text-align: center;
+    text-indent: -86px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 4px solid #535353;
+    width: 95%;
+}
+
+
+.max-offer {
+    width: 90.5%;
+    margin: 54px 0 30px;
+}
+.max-offer-out{
+  color: #b8b8b8;
+}
+
+.out {
+  color: #b8b8b8 !important;
+}
+.max-title {
+  font-size: 45px;
+  font-family: "Gravitas One";
+  color: white;
+  line-height: 0.956;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: -86px;
+}
+.black {
+  font-size: 45px;
+  font-family: "Gravitas One";
+  color: black;
+  line-height: 0.956;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: -86px;
+}
+
+ol {
+  font-size: 18px;
+  font-family: "Gravitas One";
+  font-size: 18px;
+  margin-left: -11px;
+  margin-bottom: 36px;
+}
+
+ol p {
+  font-size: 18px;
+  font-family: "Gotham HTF";
+  color: white;
+}
+
+li {
+  font-size: 18px;
+   font-family: "Gravitas One";
+}
+
+ li:before {
+   font-family: "Gravitas One";
+ }
+
+.background {
+    background-color: hsla(0,0%,67%,.2)!important;
+    padding: 12px 4px 29px 51px;
+    margin: 42px 0 10px 0;
+    font-size: 18px;
+    font-family: "Gotham HTF";
+    font-weight: 100;
+    color: white;
+    line-height: 1.2;
+    text-align: left;
+    width: 90.5%;
+}
+.background a{
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components {
+    background: black;
+    padding: 20px 0;
+    width: 266px;
+}
+#sidebar.active ul.components {
+    background: transparent; 
+    text-align: left;  
+    font-size: 16px;
+
+   
+}
+#sidebar.active ul ul a {
+    
+    color: black;
+    font-weight: 600;
+}
+#menu.active span {
+  color: black;
+}
+
+
+#sidebar ul li a {
+    
+    font-size: 16px;
+    display: block;
+    padding-left: 24px;
+    padding-bottom: 8px;
+    color: white;
+}
+
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/*#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: black;
+}*/
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+/*a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}*/
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+
+/*ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: black;
+}*/
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+.rotate {  
+        transform: rotate(180deg); 
+        margin-top: 280px;
+        transition:all 0.3s ease; 
+}
+.rotate-inverse {  
+        transform: rotate(0deg); 
+
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    background-color: black;
+    margin-left: 444px;
+    margin-top: 70px;
+    margin-right: 384px;
+/*    position: fixed;
+*/   
+}
+
+.menu {
+    margin-left: 50px !important;
+    border-left: thin solid white !important;
+
+}
+.menuBlack {
+    margin-left: 50px !important;
+    border-left: thin solid black !important;
+    width: 209px; 
+
+    /*margin-top: -20px;*/
+
+}
+.menuBlack span {
+  color: black;
+}
+
+.list-inline>li {
+     padding-right: 0px; 
+}
+.content {
+    margin: 1% 0 0 24%;
+    z-index: 2;
+}
+
+.list-inline {
+    margin-left: -8px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important ;
+
+    }
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar .info p, #sidebar .CTAs {
+        display: none;
+    }
+
+   #sidebar .logo a {
+        display: block;
+    }
+    #sidebar .customer p {
+        display: block;
+    }
+
+    #sidebar .sidebar-header strong p h1 a {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right:  0;
+        display: block;
+    }
+
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}

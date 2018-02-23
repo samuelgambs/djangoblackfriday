@@ -1,0 +1,33 @@
+image: python:3.6
+
+options:
+  docker: true
+
+pipelines:
+  default:
+    - step:
+        script:
+          - export AWS_ACCESS_KEY_ID=$PRD_AWS_ACCESS_KEY_ID
+          - export AWS_SECRET_ACCESS_KEY=$PRD_AWS_SECRET_ACCESS_KEY
+          - apt-get update && apt-get install jq -y
+          - pip install awscli boto3==1.3.0
+          - $(aws ecr get-login --no-include-email --region us-east-1)
+          - docker build -t maxmilhas/blackfriday:latest .
+          - docker tag maxmilhas/blackfriday:latest 516669511250.dkr.ecr.us-east-1.amazonaws.com/maxmilhas/blackfriday:latest
+          - docker push 516669511250.dkr.ecr.us-east-1.amazonaws.com/maxmilhas/blackfriday:latest
+          - bash deploy-task-definition.sh
+          - python3 s3_upload.py $S3_PATH milhas/static
+  custom:
+    - step:
+        script:
+          - export AWS_ACCESS_KEY_ID=$PRD_AWS_ACCESS_KEY_ID
+          - export AWS_SECRET_ACCESS_KEY=$PRD_AWS_SECRET_ACCESS_KEY
+          - apt-get update && apt-get install jq -y
+          - pip install awscli boto3==1.3.0
+          - $(aws ecr get-login --no-include-email --region us-east-1)
+          - docker build -t maxmilhas/blackfriday:latest .
+          - docker tag maxmilhas/blackfriday:latest 516669511250.dkr.ecr.us-east-1.amazonaws.com/maxmilhas/blackfriday:latest
+          - docker push 516669511250.dkr.ecr.us-east-1.amazonaws.com/maxmilhas/blackfriday:latest
+          - bash deploy-task-definition.sh
+          - python3 s3_upload.py $S3_PATH milhas/static
+

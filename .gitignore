@@ -1,0 +1,5 @@
+__pycache__
+maxmilhas/production_settings.py
+*.pyc
+.idea/
+.Python

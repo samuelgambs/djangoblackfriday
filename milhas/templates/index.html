@@ -1,0 +1,426 @@
+
+<!doctype html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>MaxFriday</title>
+
+        <link rel="stylesheet" href="assets/styles/vendors.min.css">
+        <link rel="stylesheet" href="assets/styles/main.min.css">
+
+    </head>
+
+
+    <body>
+       <div class="wrapper" >     
+            <!-- Sidebar Holder  -->
+            <nav id="sidebar">     
+                 <nav id="navbar" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button"  class="sidebarCollapse btn btn-info navbar-btn">
+                                <i class="fa fa-3x fa-bars"></i>  
+                            </button>
+                        </div>   
+                    </div>
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button"  class="sidebarCollapse btn btn-info navbar-btn">
+                                 <img id="arrow" src="assets/img/arrow.png" class="rotate">  
+                            </button>
+                        </div>   
+                    </div>                       
+                </nav>
+
+               <div class="row">
+                    <div id="logo-black-friday" class="col-md-2 col-md-offset-1 ">
+                            <img src="assets/img/logo-black-friday.png" alt=""/>
+                    </div>
+                    <div class="col-md-2 col-md-offset-5 logo">
+                        <a href="http://www.maxmilhas.com.br" target="_blank"><img src="assets/img/logo-maxmilhas.png"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3" >
+                        <ul id="menu" class="list-unstyled components">
+                            <li id="limenu" class="menu">
+                                
+                                   <span>MENU</span>
+                                
+                                <ul class="list-unstyled" id="homeSubmenu">
+                                    <li><a href="como-funciona.html"><b>+COMO FUNCIONA</b></a></li>
+                                    <li><a href="#"><b>+REGULAMENTO</b></a></li>
+                                    <li><a href="#"><b>+QUEM SOMOS?</b></a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sidebar-header  col-md-8 ">
+                        <h1>DESCONTOS IMPERDÍVEIS</h1>
+                        <div class="col-md-offset-3 col-md-9 ">
+                            <p>Na MaxFriday você sempre sai ganhando! Todos os cupons têm benefícios imperdíveis e combinam perfeitamente com a sua viagem. Mas lembre-se: eles são válidos para compras realizadas HOJE e podem esgotar a qualquer momento. Escolha seu cupom e cole agora na página de pagamento. Vai perder? </p>
+                            <p><b>Copiou, usou, economizou!</b></p>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" >
+                        <div class="menuBlack">
+                            <ul class="list-inline ">
+                                <li class="">
+                                    
+                                    <span>COMPARTILHE</span>
+                                    
+                                    <ul class="list-inline" >
+                                        
+                                        <li><a href="#"><img src="assets/img/facebook-icon.jpg" width="39" height="41" alt=""/></a></li>
+                                        <li><a href="#"><img src="assets/img/whatsapp-icon.jpg" width="39" height="41" alt=""/></a></li>
+                                        <li><a href="#"><img src="assets/img/twitter-icon.jpg" width="39" height="41" alt=""/></a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-offset-3 col-md-9 customer">
+                        <p>ATENDIMENTO <a>24HORAS</a> | SELO <a>RA1000</a></p>
+                    </div>
+                    </div>
+                    
+                </div>    
+
+            </nav>
+
+          
+            <!-- Page Content Holder -->
+                <div class="stars"></div>
+                <div class="twinkling"></div>
+                
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="top">
+                                descontos o dia todo.<span>NOVIDADE ÀS: 11H40</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="top2">
+                                AS 3 OFERTAS EM DESTAQUE MUDAM EM:
+                                <div class="count" id="countdown">
+                                    1:38:12:99
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress">
+                                      <div id="theprogressbar" class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-md-4">
+                            <div class="logo">
+                                    <img src="assets/img/logo-maxmilhas-white.png">
+                            </div>
+                            
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"> 
+                            <div class="offer" id="cupom-0">
+                                <div><span class="flag">Últimas Passagens</span></div>
+                                <div class="offer-title">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle">
+                                    para <b>primeira compra<b>
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom">cupom</div>
+                                <div class="offer-code">
+                                    <input type="text" class="js-copytextarea" value="MAXFRIDAYOFF30" id="MAXFRIDAYOFF30">
+                                </div>
+                                <button id="bt-code" class="btn-offer" onclick="copy_code('MAXFRIDAYOFF30',0)" class="">Copiar cupom</button>
+                            </div>
+                            <div class="offer offer-white hide" id="copy-cupom-0">
+                                <div><span class="flag">Últimas Passagens</span></div>
+                                <div class="close"><a onclick="out(0)">X</a></div>
+                                <div class="offer-title-white">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle-white">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-black"></div>
+                                
+                                <div class="offer-code-white">cupom copiado com sucesso!</div>
+                                <button class="btn-white">ir para o site <img src="assets/img/arrow_white.png"></button>
+                            </div>
+                             <div class="offer-out hide" id="cupom-out-0">
+                                <div>
+                                    <span class="flag">Oferta Esgotada</span>
+                                </div>
+                                <div class="offer-title out">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">esgotado</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"> 
+                            <div class="offer" id="cupom-1">
+                                <div><span class="flag">Últimas Passagens</span></div>
+                                <div class="offer-title">
+                                    50% off
+                                </div>
+                                <div class="offer-subtitle">
+                                    para <b>primeira compra<b>
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom">cupom</div>
+                                <div class="offer-code">
+                                    <input type="text" class="js-copytextarea" value="MAXFRIDAYOFF50" id="MAXFRIDAYOFF50">
+                                </div>
+                                <button id="bt-code" class="btn-offer" onclick="copy_code('MAXFRIDAYOFF50',1)" class="">Copiar cupom</button>
+                            </div>
+                            <div class="offer offer-white hide" id="copy-cupom-1">
+                                <div><span class="flag">Últimas Passagens</span></div>
+                                <div class="close"><a onclick="out(1)">X</a></div>
+                                <div class="offer-title-white">
+                                    50% off
+                                </div>
+                                <div class="offer-subtitle-white">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-black"></div>
+                                
+                                <div class="offer-code-white">cupom copiado com sucesso!</div>
+                                <button class="btn-white">ir para o site <img src="assets/img/arrow_white.png"></button>
+                            </div>
+                             <div class="offer-out hide" id="cupom-out-1">
+                                <div>
+                                    <span class="flag">Oferta Esgotada</span>
+                                </div>
+                                <div class="offer-title out">
+                                    50% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">esgotado</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"> 
+                            <div class="offer" id="cupom-2">
+                                <div><span class="flag">Últimas Passagens</span></div>
+                                <div class="offer-title">
+                                    10% off
+                                </div>
+                                <div class="offer-subtitle">
+                                    para <b>primeira compra<b>
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom">cupom</div>
+                                <div class="offer-code">
+                                    <input type="text" class="js-copytextarea" value="MAXFRIDAYOFF10" id="MAXFRIDAYOFF10">
+                                </div>
+                                <button id="bt-code" class="btn-offer" onclick="copy_code('MAXFRIDAYOFF10',2)" class="">Copiar cupom</button>
+                            </div>
+                            <div class="offer offer-white hide" id="copy-cupom-2">
+                                <div><span class="flag">Últimas Passagens</span></div>
+                                <div class="close"><a onclick="out(2)">X</a></div>
+                                <div class="offer-title-white">
+                                    10% off
+                                </div>
+                                <div class="offer-subtitle-white">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-black"></div>
+                                
+                                <div class="offer-code-white">cupom copiado com sucesso!</div>
+                                <button class="btn-white">ir para o site <img src="assets/img/arrow_white.png"></button>
+                            </div>
+                             <div class="offer-out hide" id="cupom-out-2">
+                                <div>
+                                    <span class="flag">Oferta Esgotada</span>
+                                </div>
+                                <div class="offer-title out">
+                                    10% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">esgotado</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="offer max-offer" id="cupom-3">
+                                <span class="flag">Últimas Passagens</span>
+                                <div class="offer-title">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle">
+                                    para <b>primeira compra<b>
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom">cupom</div>
+                                <div class="offer-code">
+                                    <input type="text" class="js-copytextarea" value="LOUCURA" id="LOUCURA">
+                                </div>
+                                <button id="bt-code" class="btn-offer" onclick="copy_code('LOUCURA',3)" class="">Copiar cupom</button>
+                                <div class="max-title">max<br>oferta</div>
+                            </div>
+                             <div class="offer max-offer offer-white " id="cupom-3">
+                                <span class="flag">Últimas Passagens</span>
+                                <div class="offer-title-white">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle-white">
+                                    para <b>primeira compra<b>
+                                </div>
+                                <div class="bar-black"></div>
+                                
+                                <div class="offer-code-white">cupom copiado com sucesso!</div>
+                                <button id="bt-code" class="btn-offer" onclick="copy_code('LOUCURA',3)" class="">Copiar cupom</button>
+                                <div class="max-title-black">max<br>oferta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="background">
+                                <h3>Como usar:</h3>
+                                <ol>
+                                    <li><p><b>Copie</b> seu cupom e acelere.</p></li>
+                                    <li><p>Busque e selecione seu voo no sute da <a>MaxMilhas</a>.</p></li>
+                                    <li><p><b>Aplique o cupom na tela de pagamento</b>, finalize a compra e garanta o desconto.</p></li>
+                                </ol>
+
+                                Copiou seu desconto?<br>
+                                <button class="btn-link">Pesquise sua passagem agora <img src="assets/img/arrow_white.png"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-5">
+                            <div class="bar-gray"></div>
+                        </div>
+                        <div class="col-md-12 text-center pagination-centered center-block">    
+                            <h2>ofertas esgotadas</h2>
+                            <h4>se você não aproveitou, perdeu!</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                        </div>
+                    </div>
+                     
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="offer-out " id="cupom-out-0">
+                                <div>
+                                    <span class="flag">Oferta Esgotada</span>
+                                </div>
+                                <div class="offer-title out">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">esgotado</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="offer-out " id="cupom-out-0">
+                                <div>
+                                    <span class="flag">Oferta Esgotada</span>
+                                </div>
+                                <div class="offer-title out">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">esgotado</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="offer-out " id="cupom-out-0">
+                                <div>
+                                    <span class="flag">Oferta Esgotada</span>
+                                </div>
+                                <div class="offer-title out">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para primeira compra
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">esgotado</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="offer-out max-offer">
+                                <span class="flag">ofertas esgotadas</span>
+                                <div class="offer-title out">
+                                    30% off
+                                </div>
+                                <div class="offer-subtitle out">
+                                    para <b>primeira compra<b>
+                                </div>
+                                <div class="bar-silver"></div>
+                                <div class="offer-cupom out">cupom</div>
+                                <div class="offer-code out">
+                                    ESGOTADO
+                                </div>
+                                <div class="max-title out">max<br>oferta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="footer">
+                            <a href="https://www.facebook.com/MaxMilhas" target="_blank"><img src="assets/img/facebook.png" alt=""></a>
+                            <a href="https://www.facebook.com/MaxMilhas" target="_blank"><img src="assets/img/linkedin.png" alt=""></a>
+                            <a href="https://twitter.com/maxmilhas" target="_blank"><img src="assets/img/twitter.png" alt=""></a>   
+                            <a href="https://www.facebook.com/MaxMilhas" target="_blank"><img src="assets/img/youtube.jpg" alt=""></a>
+                            <a href="https://www.facebook.com/MaxMilhas" target="_blank"><img src="assets/img/instagram.png" alt=""></a>
+                        </div>
+                    </div>                                                     
+                </div>                         
+                
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Scripts de vendors, wow.js separado para evitar conflitos e MAIN JS -->
+        <script src="assets/scripts/vendors.min.js"></script>
+        <script src="assets/scripts/vendors/wow/wow.min.js"></script>
+        <script src="assets/scripts/main.js"></script>
+        
+
+    </body>
+</html>
